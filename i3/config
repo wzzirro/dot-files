@@ -11,6 +11,8 @@ floating_modifier $super
 #autostart
 exec --no-startup-id sh /home/wzzirro/scripts/wallpaper.sh
 exec --no-startup-id hsetroot -cover /home/wzzirro/images/wallpaper.jpg
+exec --no-startup-id xrandr --output HDMI-1-1 --auto --right-of eDP-1-1
+exec --no-startup-id setxkbmap "us,ru" ",winkeys" "grp:alt_shift_toggle"
 
 # start a terminal
 bindsym $super+Return exec i3-sensible-terminal
@@ -138,3 +140,7 @@ client.unfocused            #2f343f #2f343f #d8dee8 #2f343f #2f343f
 client.urgent               #2f343f #2f343f #d8dee8 #2f343f #2f343f
 client.placeholder          #2f343f #2f343f #d8dee8 #2f343f #2f343f
 client.background           #2f343f
+
+
+for_window [class=.*] border normal 0
+for_window [class=.*] border pixel 0
