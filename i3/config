@@ -39,9 +39,9 @@ bindsym XF86AudioLowerVolume exec amixer -q set Master 5%- unmute
 # amixer set Speaker unmute
 bindsym XF86AudioMute exec amixer set Master 0% mute
 
-# keyboard brightness
-bindsym XF86KbdBrightnessUp exec echo 5 > /sys/class/leds/asus::lightbar/brightness
-bindsym XF86KbdBrightnessDown exec echo 0 > /sys/class/leds/asus::lightbar/brightness
+# brightness
+bindsym XF86MonBrightnessUp exec ~/.config/i3/scripts/bright Up
+bindsym XF86MonBrightnessDown exec ~/.config/i3/scripts/bright Down
 
 # music control
 bindsym XF86AudioNext exec mpc next
